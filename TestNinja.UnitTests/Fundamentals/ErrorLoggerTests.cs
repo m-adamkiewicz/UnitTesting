@@ -25,7 +25,6 @@ namespace TestNinja.UnitTests
             Assert.That(_logger.LastError, Is.EqualTo("a"));
         }
         [Test]
-        [Ignore("Throws too many exceptions")]
         [TestCase(null)]
         [TestCase("")]
         [TestCase(" ")]

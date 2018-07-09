@@ -7,7 +7,6 @@ namespace TestNinja.UnitTests
     class StackTests
     {
         [Test]
-        [Ignore(" ")]
         public void Push_ArgumentIsNull_ThrowArgumentNullException()
         {
             var stack = new Stack<string>();
@@ -30,7 +29,6 @@ namespace TestNinja.UnitTests
             Assert.That(stack.Count, Is.EqualTo(0));
         }
         [Test]
-        [Ignore(" ")]
         public void Pop_EmptyStack_ThrowInvalidOperationException()
         {
             var stack = new Stack<string>();
@@ -64,7 +62,6 @@ namespace TestNinja.UnitTests
             Assert.That(stack.Count, Is.EqualTo(3));
         }
         [Test]
-        [Ignore(" ")]
         public void Peek_EmptyStack_ThrowsInvalidOperationException()
         {
             var stack = new Stack<string>();

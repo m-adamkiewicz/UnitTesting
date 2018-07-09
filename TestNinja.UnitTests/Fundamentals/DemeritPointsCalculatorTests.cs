@@ -18,7 +18,6 @@ namespace TestNinja.UnitTests
             _pointsCalculator = new DemeritPointsCalculator();
         }
         [Test]
-        [Ignore("Exceptiony ")]
         [TestCase(-1)]
         [TestCase(301)]
         public void CalculateDemeritPoints_SpeedIsBelowZeroOrExceedsMaxSpeed_ThrowArgumentOutOfRangeException(int speed)
